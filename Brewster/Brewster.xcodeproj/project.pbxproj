@@ -11,7 +11,7 @@
 		F7D993A12829701A00DC561C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D993A02829701A00DC561C /* ContentView.swift */; };
 		F7D993A32829701B00DC561C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D993A22829701B00DC561C /* Assets.xcassets */; };
 		F7D993A62829701C00DC561C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D993A52829701C00DC561C /* Preview Assets.xcassets */; };
-		F7D993AD2829707700DC561C /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D993AC2829707700DC561C /* File.swift */; };
+		F7D993AF2829787400DC561C /* DefaultBrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D993AE2829787400DC561C /* DefaultBrew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,7 @@
 		F7D993A02829701A00DC561C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F7D993A22829701B00DC561C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7D993A52829701C00DC561C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F7D993AC2829707700DC561C /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		F7D993AE2829787400DC561C /* DefaultBrew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBrew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			children = (
 				F7D9939E2829701A00DC561C /* BrewsterApp.swift */,
 				F7D993A02829701A00DC561C /* ContentView.swift */,
-				F7D993AC2829707700DC561C /* File.swift */,
+				F7D993AE2829787400DC561C /* DefaultBrew.swift */,
 				F7D993A22829701B00DC561C /* Assets.xcassets */,
 				F7D993A42829701C00DC561C /* Preview Content */,
 			);
@@ -141,7 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7D993A12829701A00DC561C /* ContentView.swift in Sources */,
-				F7D993AD2829707700DC561C /* File.swift in Sources */,
+				F7D993AF2829787400DC561C /* DefaultBrew.swift in Sources */,
 				F7D9939F2829701A00DC561C /* BrewsterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
