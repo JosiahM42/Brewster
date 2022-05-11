@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7B09D4B282C1B5000470CC5 /* CoffeeRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B09D4A282C1B5000470CC5 /* CoffeeRecipes.swift */; };
 		F7D9939F2829701A00DC561C /* BrewsterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D9939E2829701A00DC561C /* BrewsterApp.swift */; };
 		F7D993A12829701A00DC561C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D993A02829701A00DC561C /* ContentView.swift */; };
 		F7D993A32829701B00DC561C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D993A22829701B00DC561C /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F7B09D4A282C1B5000470CC5 /* CoffeeRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeRecipes.swift; sourceTree = "<group>"; };
 		F7D9939B2829701A00DC561C /* Brewster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brewster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D9939E2829701A00DC561C /* BrewsterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewsterApp.swift; sourceTree = "<group>"; };
 		F7D993A02829701A00DC561C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				F7D9939E2829701A00DC561C /* BrewsterApp.swift */,
 				F7D993A02829701A00DC561C /* ContentView.swift */,
 				F7D993AE2829787400DC561C /* DefaultBrew.swift */,
+				F7B09D4A282C1B5000470CC5 /* CoffeeRecipes.swift */,
 				F7D993A22829701B00DC561C /* Assets.xcassets */,
 				F7D993A42829701C00DC561C /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7D993A12829701A00DC561C /* ContentView.swift in Sources */,
+				F7B09D4B282C1B5000470CC5 /* CoffeeRecipes.swift in Sources */,
 				F7D993AF2829787400DC561C /* DefaultBrew.swift in Sources */,
 				F7D9939F2829701A00DC561C /* BrewsterApp.swift in Sources */,
 			);

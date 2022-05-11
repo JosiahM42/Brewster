@@ -9,127 +9,146 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Brewing Methods")
-            .font(.title2)
-            .padding(.top)
-            .multilineTextAlignment(.center)
-        /*https://icons8.com/icons/authors/RsIdElNdRw1Z/chattapat-./external-filled-outline-02-chattapat-/external-coffee-shop-filled-outline-02-chattapat-*/
-        VStack{
-            HStack{
-                Button(action: {
-                    print("Chemex")
-                }) {
-                    Image("chemex")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 65, height: 60)
-                        .clipped()
-                        //.cornerRadius(50)
-                }
-                .padding()
-                
-                /*VStack {
-                    Text("Chemex")
-                        .font(.system(size: 18, weight:.medium, design: .default))
-                }*/
-                
-                Button(action: {
-                    print("Aeropress")
-                })
-                {
-                    Image("aeropress")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 65, height: 60)
-                        .clipped()
-                        //.cornerRadius(50)
-                    /*VStack {
-                        Text("AeroPress")
-                            .font(.system(size: 18, weight:.medium, design: .default))
-                    }*/
-                }
-                .padding()
-                
-                Button(action: {
-                    print("V60")
-                })
-                {
-                    Image("pourOver")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 65, height: 60)
-                        .clipped()
-                        //.cornerRadius(50)
-                    /*VStack {
-                        Text("AeroPress")
-                            .font(.system(size: 18, weight:.medium, design: .default))
-                    }*/
-                }
-                .padding()
-                
-            }
-            HStack {
-                Button(action: {
-                    print("Moka Pot")
-                })
-                {
-                    Image("moka")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 65, height: 60)
-                        .clipped()
-                        //.cornerRadius(50)
-                    /*VStack {
-                        Text("AeroPress")
-                            .font(.system(size: 18, weight:.medium, design: .default))
-                    }*/
+
+                VStack(alignment: .leading){
+                    Text("Brewing Methods")
+                        .font(.title)
                     
+                    HStack{
+                        VStack{
+                            Group{
+                                Button(action: {
+                                    print("Chemex")
+                                }) {
+                                    Image("chemex")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: 65, height: 60)
+                                        .clipped()
+                                    
+                                }
+                                
+                                Text("Chemex")
+                                    .padding(.leading, 5.0)
+                            }
+                        }
+                        .padding()
+                        
+                        VStack{
+                            Group{
+                                Button(action: {
+                                    print("Aeropress")
+                                })
+                                {
+                                    Image("aeropress")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: 65, height: 60)
+                                        .clipped()
+
+                                }
+                                Text("AeroPress")
+                                    .padding(.leading, 5.0)
+                            }
+                        }
+                        .padding()
+                        
+                        VStack{
+                            Group{
+                                Button(action: {
+                                    print("V60")
+                                })
+                                {
+                                    Image("pourOver")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: 65, height: 60)
+                                        .clipped()
+
+                                }
+                                Text("Hario V60")
+                                    .padding(.leading, 5.0)
+                            }
+                        }
+                        .padding()
+                    }
+                    HStack {
+                        VStack{
+                            Group{
+                                Button(action: {
+                                    print("Moka Pot")
+                                })
+                                {
+                                    Image("moka")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: 65, height: 60)
+                                        .clipped()
+                                    
+                                }
+                                Text("Moka Pot")
+                                    .padding(.leading, 5.0)
+                            }
+                        }
+                        .padding()
+                        
+                        VStack{
+                            Group{
+                                Button(action: {
+                                    print("French Press")
+                                })
+                                {
+                                    Image("frenchpress")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: 65, height: 60)
+                                        .clipped()
+
+                                }
+                                Text("French Press")
+                                    .padding(.leading, 5.0)
+                                
+                            }
+                        }
+                        .padding()
+
+                        VStack{
+                            Group{
+                                Button(action: {
+                                    print("Cold Brew")
+                                })
+                                {
+                                    Image("coldBrew")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: 65, height: 60)
+                                        .clipped()
+                                    
+                                }
+                                Text("Cold Brew")
+                                    .padding(.leading, 5.0)
+                                
+                            }
+                        }
+                    }
+                    
+                    Text("Coffee Recipes")
+                        .font(.title)
+                        .padding(.top)
                 }
-                .padding()
-                
-                Button(action: {
-                    print("French Press")
-                })
-                {
-                    Image("frenchpress")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 65, height: 60)
-                        .clipped()
-                        //.cornerRadius(50)
-                    /*VStack {
-                        Text("AeroPress")
-                            .font(.system(size: 18, weight:.medium, design: .default))
-                    }*/
-                }
-                .padding()
-                .accessibilityLabel(/*@START_MENU_TOKEN@*/"French Press"/*@END_MENU_TOKEN@*/)
-                
-                Button(action: {
-                    print("Cold Brew")
-                })
-                {
-                    Image("coldBrew")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 65, height: 60)
-                        .clipped()
-                        //.cornerRadius(50)
-                    /*VStack {
-                        Text("AeroPress")
-                            .font(.system(size: 18, weight:.medium, design: .default))
-                    }*/
-                }
-                .padding()
-            }
-        }
-        
+                .padding(.top)
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
+            
     }
 }
 
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+            ContentView()
+        }
     }
 }
 
