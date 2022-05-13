@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Recipes: Identifiable {
+/*struct Recipes: Identifiable {
     let id = UUID()
     let name: String
     let image: String
@@ -16,4 +16,4 @@ struct Recipes: Identifiable {
 
 let recipeList = [
     Recipes(name: , image: <#T##String#>)
-]
+]*/
