@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F770F6562832923B0036F920 /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F770F6552832923B0036F920 /* InstructionView.swift */; };
+		F770F6582832C2A50036F920 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F770F6572832C2A50036F920 /* TimerView.swift */; };
 		F7B09D4B282C1B5000470CC5 /* CoffeeRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B09D4A282C1B5000470CC5 /* CoffeeRecipes.swift */; };
 		F7CCE893282E8A6B00157914 /* BrewsterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D9939E2829701A00DC561C /* BrewsterApp.swift */; };
 		F7CCE895282E8E6B00157914 /* BrewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CCE894282E8E6B00157914 /* BrewView.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F770F6552832923B0036F920 /* InstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; usesTabs = 0; };
+		F770F6572832C2A50036F920 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		F7B09D4A282C1B5000470CC5 /* CoffeeRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeRecipes.swift; sourceTree = "<group>"; };
 		F7CCE894282E8E6B00157914 /* BrewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewView.swift; sourceTree = "<group>"; };
 		F7D9939B2829701A00DC561C /* Brewster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brewster.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,13 +61,15 @@
 		F7D9939D2829701A00DC561C /* Brewster */ = {
 			isa = PBXGroup;
 			children = (
+				F770F6552832923B0036F920 /* InstructionView.swift */,
 				F7D9939E2829701A00DC561C /* BrewsterApp.swift */,
 				F7D993A02829701A00DC561C /* ContentView.swift */,
 				F7D993AE2829787400DC561C /* DefaultBrew.swift */,
 				F7B09D4A282C1B5000470CC5 /* CoffeeRecipes.swift */,
+				F7CCE894282E8E6B00157914 /* BrewView.swift */,
 				F7D993A22829701B00DC561C /* Assets.xcassets */,
 				F7D993A42829701C00DC561C /* Preview Content */,
-				F7CCE894282E8E6B00157914 /* BrewView.swift */,
+				F770F6572832C2A50036F920 /* TimerView.swift */,
 			);
 			path = Brewster;
 			sourceTree = "<group>";
@@ -146,11 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F770F6582832C2A50036F920 /* TimerView.swift in Sources */,
 				F7CCE895282E8E6B00157914 /* BrewView.swift in Sources */,
 				F7B09D4B282C1B5000470CC5 /* CoffeeRecipes.swift in Sources */,
 				F7D993AF2829787400DC561C /* DefaultBrew.swift in Sources */,
 				F7D55721282E89F0003C86FD /* ContentView.swift in Sources */,
 				F7CCE893282E8A6B00157914 /* BrewsterApp.swift in Sources */,
+				F770F6562832923B0036F920 /* InstructionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

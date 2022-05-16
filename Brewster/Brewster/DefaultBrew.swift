@@ -13,8 +13,10 @@ struct BrewingMethods: Identifiable {
     let name: String
     let image: String
     let description: String
+    let equipmentImages: [String]
     let equipment: [String]
-    let brewingTime: Float
+    let brewingTime: String
+    let timeInSeconds: Int
     
 }
 
@@ -26,11 +28,11 @@ struct BrewingInstructions: Identifiable {
 }
 
 let BrewingMethodsList = [
-    BrewingMethods(name: "Chemex", image:"chemex", description: "A drip coffee brewing method perfect for coffee lovers who prefer a richer tasting coffee with little to no post brewing mess.", equipment: ["Chemex Carafe", "Chemex Filters", "Kettle", "Coffee"], brewingTime: 4.00),
-    BrewingMethods(name: "Hario V60", image:"pourOver", description: "A pour over coffee brewing method perfect for introducing coffee lovers to speciality brewing, and for people who prefer a richer tasting coffee with little to no preperation time. ", equipment: ["Pour over dripper", "Coffee Filter Paper", "Kettle", "Coffee", "Cup/Jug"], brewingTime: 3.00),
-    BrewingMethods(name: "AeroPress", image:"aeropress", description: "A pressurised coffee brewing method perfect for quick early morning coffee lovers to speciality brewing, and for people who prefer a richer tasting coffee with little to no preperation time. ", equipment: ["Pour over dripper", "Coffee Filter Paper", "Kettle", "Coffee", "Cup/Jug"], brewingTime: 1.30),
-    BrewingMethods(name: "French Press", image:"frenchpress", description: "An immersion coffee brewing method perfect for coffee lovers that prefer a stronger tasting brew and want to experience brewing a great tasting coffee with little to no set up. ", equipment: ["French Press", "Kettle", "Spoon", "Coffee Measuring Spoon", "Coffee", "Cup/Jug",], brewingTime: 4.00),
-    BrewingMethods(name: "Moka Pot", image:"moka", description: "A pressure based coffee brewing method that takes a little skill to use but produces a flavourful espresso like coffee.", equipment: ["Moka pot", "Kettle", "Coffee Measuring Spoon", "Coffee", "Cup/Jug"], brewingTime: 4.00)
+    BrewingMethods(name: "Chemex", image:"chemex", description: "A drip coffee brewing method perfect for coffee lovers who prefer a richer tasting coffee with little to no post brewing mess.", equipmentImages: ["chemex", "coffeeFilter", "kettle", "coffee"], equipment: ["Chemex Carafe", "Chemex Filters", "Kettle", "Coffee"], brewingTime: "4:00", timeInSeconds: 240),
+    BrewingMethods(name: "Hario V60", image:"pourOver", description: "A pour over coffee brewing method perfect for introducing coffee lovers to speciality brewing, and for people who prefer a richer tasting coffee with little to no preperation time. ", equipmentImages: ["pourOver", "coffeeFilter", "kettle",  "coffee", "espressoCup"], equipment: ["Pour over dripper", "Coffee Filter Paper", "Kettle", "Coffee", "Cup"], brewingTime: "3:00", timeInSeconds: 180),
+    BrewingMethods(name: "AeroPress", image:"aeropress", description: "A pressurised coffee brewing method perfect for quick early morning coffee lovers to speciality brewing, and for people who prefer a richer tasting coffee with little to no preperation time. ", equipmentImages: ["aeropress", "coffeeFilter", "kettle", "coffee", "espressoCup"], equipment: ["AeroPress", "Coffee Filter Paper", "Kettle", "Coffee", "Cup"], brewingTime: "1:30", timeInSeconds: 90),
+    BrewingMethods(name: "French Press", image:"frenchpress", description: "An immersion coffee brewing method perfect for coffee lovers that prefer a stronger tasting brew and want to experience brewing a great tasting coffee with little to no set up. ", equipmentImages: ["frenchpress", "kettle", "spoon", "measuringSpoon", "coffee", "espressoCup"], equipment: ["French Press", "Kettle", "Spoon", "Measuring Spoon", "Coffee", "Cup"], brewingTime: "4:00", timeInSeconds: 240),
+    BrewingMethods(name: "Moka Pot", image:"moka", description: "A pressure based coffee brewing method that takes a little skill to use but produces a flavourful espresso like coffee.", equipmentImages: ["moka", "kettle", "measuringSpoon", "coffee", "espressoCup"], equipment: ["Moka pot", "Kettle", "Measuring Spoon", "Coffee", "Cup"], brewingTime: "4:00", timeInSeconds: 240)
 ]
 
 let InstructionsList = [
@@ -41,7 +43,3 @@ let InstructionsList = [
     BrewingInstructions(brewingMethod: "Moka Pot", instructions: ["Fill your kettle with water and bring it to a boil.", "Fill the bottom portion of the Moka pot with water until it has reached the valve on the side of the pot. Then insert the funnel into the pot and dispose of any excess water that has seeped through.", "Fill your coffee measuring spoon with your desired ground coffee and pour it into the funnel.", "Screw the top portion of the Moka pot on tightly and place the pot on a stove over a medium flame.", "During the brewing process the heat will create pressure pushing steam out through the top chamber. Once brewing process has completed, you will hear a hissing sound. At this point quickly remove the pot from the stove and allow the coffee to finish filling the top chamber.", "Enjoy your coffee!"]),
 ]
 
-
-/*let InstructionsList = [
-    BrewingInstructions(brewingMethod: "Chemex", instructions: ["Step 1: Fill your kettle with water and bring it to a boil of roughly 95°C", "Step 2: Weigh out your desired coffee amount. For a quality tasting brew, 50 grams of coffee is recommended. ", "Step 3: Fold your filter paper in a cone shape and place it in your chemex, ensuring that the triple-fold side is facing the pouring filter.", "Step 4: Fully saturate the filter in hot water from the kettle to help remove the paper taste and warm the flask. Once done, discard the water.", "Step 5: Pour your coffee grounds into the filter and lightly shake to settle the coffee. This is to ensure for an even pour.", "Step 6: Start your timer and slowy pour water in a swirling motion, starting from the centre until the grounds have been submurged.", "Step 7: Allow the coffee to bloom for 40 seconds to improve extraction", "Step 8: Start pouring more water into the filter in a swirling motion until filter is half way full. Then allow the water to filtrate through the filter.", "Step 9: Repeat step 8 Three more times or until the timer ends.", "Step 10: Enjoy your coffee!"], image: ["Chemex-step-1", "Chemex-step-2", "Chemex-step-"])
-]*/
