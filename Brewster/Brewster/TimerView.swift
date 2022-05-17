@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct TimerView: View {
+    @Binding var backToRoot: Bool
     let brewingMethod: BrewingMethods
     
     @State var remaining = 0
@@ -70,7 +71,7 @@ struct TimerView: View {
                         .padding(.trailing)
                         .clipped()
                 }
-                .padding(.bottom, 80)
+                .padding(.bottom, 50)
                 
                 Button(action: {
                     StopTimer()
@@ -83,11 +84,30 @@ struct TimerView: View {
                         .padding(.leading)
                         .clipped()
                 }
-                .padding(.bottom, 80)
+                .padding(.bottom, 50)
+                
+                //Button(action: { self.backToRoot = false })
+                //{
+                    //Text("New Brew")
+                //}
             
             }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .bottom)
             
+            Button(action: { self.backToRoot = false })
+            {
+                Text("New Brew")
+                    .padding(.horizontal, 40)
+                    .padding(.vertical, 15)
+                    .background(Color("button"))
+                    .foregroundColor(.white)
+                    //.border(.black, width: 2)
+                    .font(.title)
+            }
+            .cornerRadius(4)
+            .padding(.bottom, 40)
+            
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
+            .background(Color("Background"))
         
     }
     func brewingProgress() -> CGFloat {
@@ -122,8 +142,8 @@ struct BrewTimer: View {
     }
 }
 
-struct TimerView_Previews: PreviewProvider {
-    static var previews: some View {
-        TimerView(brewingMethod: BrewingMethodsList[0])
-    }
-}
+//struct TimerView_Previews: PreviewProvider {
+    //static var previews: some View {
+        //TimerView(brewingMethod: BrewingMethodsList[0])
+    //}
+//}

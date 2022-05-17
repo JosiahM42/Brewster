@@ -9,11 +9,13 @@ import Foundation
 import SwiftUI
 
 struct BrewView: View {
+    @Binding var isRootActive: Bool
+    
     let brewMethod: BrewingMethods
     var body: some View {
         //NavigationView{
             //VStack(alignment: .leading){
-            VStack(spacing: 15){
+            VStack(spacing: 20){
                 Text(brewMethod.name)
                     .font(.title)
                     //.padding(.top)
@@ -83,29 +85,33 @@ struct BrewView: View {
                 Button(action: {
                     print("Changed Screen")
                 } , label: {
-                    NavigationLink(destination: InstructionView(brewingMethod: brewMethod)) {
+                    NavigationLink(destination: InstructionView(isRootActive: self.$isRootActive, brewingMethod: brewMethod)) {
                         Text("Brew")
-                            .padding()
-                            .foregroundColor(.black)
-                            .border(.black, width: 2)
+                            .padding(.horizontal, 40)
+                            .padding(.vertical, 15)
+                            .background(Color("button"))
+                            .foregroundColor(.white)
+                            //.border(.black, width: 2)
                             .font(.title)
                     }
+                    .isDetailLink(false)
                 })
                     .cornerRadius(4)
-                    .padding(.top, 30.0)
+                    .padding(.top, 60.0)
                 //.buttonStyle(.bordered)
                 
             }
             .padding(.bottom, 120.0)
             .fixedSize(horizontal: false, vertical: true)
+            .background(Color("Background"))
             //Spacer()
         //}
     }
 }
 
-struct BrewView_Previews: PreviewProvider {
-    static var previews: some View {
-        BrewView(brewMethod: BrewingMethodsList[0])
-    }
-}
+//struct BrewView_Previews: PreviewProvider {
+    //static var previews: some View {
+        //BrewView(isRootActive: self.$isRootActive, brewMethod: BrewingMethodsList[0])
+    //}
+//}
 

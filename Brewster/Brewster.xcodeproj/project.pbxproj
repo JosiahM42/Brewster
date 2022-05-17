@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F75438C728342693005D5D15 /* BrewsterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D9939E2829701A00DC561C /* BrewsterApp.swift */; };
+		F75438C8283426A4005D5D15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D993A02829701A00DC561C /* ContentView.swift */; };
 		F770F6562832923B0036F920 /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F770F6552832923B0036F920 /* InstructionView.swift */; };
 		F770F6582832C2A50036F920 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F770F6572832C2A50036F920 /* TimerView.swift */; };
 		F7B09D4B282C1B5000470CC5 /* CoffeeRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B09D4A282C1B5000470CC5 /* CoffeeRecipes.swift */; };
-		F7CCE893282E8A6B00157914 /* BrewsterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D9939E2829701A00DC561C /* BrewsterApp.swift */; };
 		F7CCE895282E8E6B00157914 /* BrewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CCE894282E8E6B00157914 /* BrewView.swift */; };
-		F7D55721282E89F0003C86FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D993A02829701A00DC561C /* ContentView.swift */; };
 		F7D993A32829701B00DC561C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D993A22829701B00DC561C /* Assets.xcassets */; };
 		F7D993A62829701C00DC561C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D993A52829701C00DC561C /* Preview Assets.xcassets */; };
 		F7D993AF2829787400DC561C /* DefaultBrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D993AE2829787400DC561C /* DefaultBrew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F75438C928344108005D5D15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F770F6552832923B0036F920 /* InstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		F770F6572832C2A50036F920 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		F7B09D4A282C1B5000470CC5 /* CoffeeRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeRecipes.swift; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		F7D9939D2829701A00DC561C /* Brewster */ = {
 			isa = PBXGroup;
 			children = (
+				F75438C928344108005D5D15 /* Info.plist */,
 				F770F6552832923B0036F920 /* InstructionView.swift */,
 				F7D9939E2829701A00DC561C /* BrewsterApp.swift */,
 				F7D993A02829701A00DC561C /* ContentView.swift */,
@@ -154,10 +156,10 @@
 			files = (
 				F770F6582832C2A50036F920 /* TimerView.swift in Sources */,
 				F7CCE895282E8E6B00157914 /* BrewView.swift in Sources */,
+				F75438C8283426A4005D5D15 /* ContentView.swift in Sources */,
 				F7B09D4B282C1B5000470CC5 /* CoffeeRecipes.swift in Sources */,
 				F7D993AF2829787400DC561C /* DefaultBrew.swift in Sources */,
-				F7D55721282E89F0003C86FD /* ContentView.swift in Sources */,
-				F7CCE893282E8A6B00157914 /* BrewsterApp.swift in Sources */,
+				F75438C728342693005D5D15 /* BrewsterApp.swift in Sources */,
 				F770F6562832923B0036F920 /* InstructionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,9 +293,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Brewster/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Brewster/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,9 +321,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Brewster/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Brewster/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

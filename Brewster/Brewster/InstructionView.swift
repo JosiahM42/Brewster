@@ -9,6 +9,7 @@ import SwiftUI
 
 
 struct InstructionView: View {
+    @Binding var isRootActive: Bool
     let brewingMethod: BrewingMethods
     //let brewingInstructions: BrewingInstructions
     var body: some View {
@@ -46,7 +47,7 @@ struct InstructionView: View {
             Button(action: {
                 print("Changed Screen")
             } , label: {
-                NavigationLink(destination: TimerView(brewingMethod: brewingMethod)) {
+                NavigationLink(destination: TimerView(backToRoot: self.$isRootActive, brewingMethod: brewingMethod)) {
                     Text("Start Timer")
                         //.padding()
                         //.background(Color.purple)
@@ -58,20 +59,22 @@ struct InstructionView: View {
                         //.border(.black, width: 2)
                         .font(.title)
                 }
+                .isDetailLink(false)
             })
                 //.background(.purple)
                 //.foregroundColor(.white)
                 .cornerRadius(4)
-                .padding(.top, 570)
+                .padding(.top, 600)
                 
                 
         }
+        .background(Color("Background"))
     }
 }
 
-struct InstructionView_Previews: PreviewProvider {
-    static var previews: some View {
-        InstructionView(brewingMethod: BrewingMethodsList[0])
-    }
-}
+//struct InstructionView_Previews: PreviewProvider {
+    //static var previews: some View {
+    //    InstructionView(brewingMethod: BrewingMethodsList[0])
+    //}
+//}
 
