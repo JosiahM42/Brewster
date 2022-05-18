@@ -97,11 +97,11 @@ struct BrewView: View {
                     .isDetailLink(false)
                 })
                     .cornerRadius(4)
-                    .padding(.top, 60.0)
+                    .padding(.top, 30.0)
                 //.buttonStyle(.bordered)
                 
             }
-            .padding(.bottom, 120.0)
+            .padding(.bottom, 80.0)
             .fixedSize(horizontal: false, vertical: true)
             .background(Color("Background"))
             //Spacer()

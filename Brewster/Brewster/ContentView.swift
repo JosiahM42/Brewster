@@ -6,8 +6,13 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
-    @State var isActive: Bool = false
+    @State var isChemexActive: Bool = false
+    @State var isHarioActive: Bool = false
+    @State var isAeropressActive: Bool = false
+    @State var isFrenchActive: Bool = false
+    @State var isMokaActive: Bool = false
     
     var body: some View {
 
@@ -25,7 +30,7 @@ struct ContentView: View {
                                    Button(action: {
                                        print(BrewingMethodsList[0].name)
                                    }, label: {
-                                       NavigationLink(destination: BrewView(isRootActive: self.$isActive, brewMethod: BrewingMethodsList[0]), isActive: self.$isActive){
+                                       NavigationLink(destination: BrewView(isRootActive: self.$isChemexActive, brewMethod: BrewingMethodsList[0]), isActive: self.$isChemexActive){
                                               BrewingRow(brewMethod: BrewingMethodsList[0])
                                               
                                         }
@@ -38,7 +43,7 @@ struct ContentView: View {
                                    Button(action: {
                                        print(BrewingMethodsList[1].name)
                                    }, label: {
-                                          NavigationLink(destination: BrewView(isRootActive: self.$isActive, brewMethod: BrewingMethodsList[1]), isActive: self.$isActive){
+                                          NavigationLink(destination: BrewView(isRootActive: self.$isHarioActive, brewMethod: BrewingMethodsList[1]), isActive: self.$isHarioActive){
                                               BrewingRow(brewMethod: BrewingMethodsList[1])
                                               
                                           }
@@ -58,7 +63,7 @@ struct ContentView: View {
                                    Button(action: {
                                        print(BrewingMethodsList[2].name)
                                    }, label: {
-                                          NavigationLink(destination: BrewView(isRootActive: self.$isActive, brewMethod: BrewingMethodsList[2]), isActive: self.$isActive){
+                                          NavigationLink(destination: BrewView(isRootActive: self.$isAeropressActive, brewMethod: BrewingMethodsList[2]), isActive: self.$isAeropressActive){
                                               BrewingRow(brewMethod: BrewingMethodsList[2])
                                               
                                           }
@@ -69,7 +74,7 @@ struct ContentView: View {
                                    Button(action: {
                                        print(BrewingMethodsList[3].name)
                                    }, label: {
-                                          NavigationLink(destination: BrewView(isRootActive: self.$isActive, brewMethod: BrewingMethodsList[3]), isActive: self.$isActive){
+                                          NavigationLink(destination: BrewView(isRootActive: self.$isFrenchActive, brewMethod: BrewingMethodsList[3]), isActive: self.$isFrenchActive){
                                               BrewingRow(brewMethod: BrewingMethodsList[3])
                                               
                                           }
@@ -84,7 +89,7 @@ struct ContentView: View {
                            Button(action: {
                                print(BrewingMethodsList[4].name)
                            }, label: {
-                                  NavigationLink(destination: BrewView(isRootActive: self.$isActive, brewMethod: BrewingMethodsList[4]), isActive: self.$isActive){
+                                  NavigationLink(destination: BrewView(isRootActive: self.$isMokaActive, brewMethod: BrewingMethodsList[4]), isActive: self.$isMokaActive){
                                       BrewingRow(brewMethod: BrewingMethodsList[4])
                                       
                                   }
