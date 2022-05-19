@@ -15,6 +15,9 @@ struct TimerView: View {
     @State var remaining = 0
     @State private var swiftTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
+    // Tutorial used to make timer
+    //https://tutorial101.blogspot.com/2021/06/swiftui-timer-using-circular-progress.html
+    
     var body: some View {
         VStack{
             Text("Brewing...")
