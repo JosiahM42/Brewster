@@ -14,4 +14,5 @@ This app must be run using xcode on a mac os compatible devices and run on eithe
 
 ## App Demo
 A link to the Demo can be found below
+[Brewster iOS App Demo](https://youtu.be/lQpU6wiI2Tc "Brewster iOS App Demo")
 
